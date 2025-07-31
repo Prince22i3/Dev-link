@@ -1,0 +1,34 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./app/components/home.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+.c{
+    display: flex;
+    align-items: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+}
+.login{
+    background-color: rgb(255, 140, 0); 
+    color: white;
+    padding:5px;
+}
+.dark{
+    color: #cccccc;
+    text-decoration: none;
+}
+.light{
+    color: #000000;
+    text-decoration: none;
+}

@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+.c{
+    display: flex;
+    align-items: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+}
+.login{
+    background-color: rgb(255, 140, 0); 
+    color: white;
+    padding:5px;
+}
+.dark{
+    color: #cccccc;
+    text-decoration: none;
+}
+.light{
+    color: #000000;
+    text-decoration: none;
+}
