@@ -43,5 +43,3 @@ const SignIn: React.FC = () => {
 }
 
 export default SignIn
-
-console.log("Git tracking test");
