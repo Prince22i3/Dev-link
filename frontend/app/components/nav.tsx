@@ -24,7 +24,7 @@ const Home: React.FC = () => {
           <div className='c' style={{ listStyle: "none", gap: "30px" }}>
             <li>Home</li>
             <li><Link className={dark?"dark":"light"} href="/signin">SignIn</Link></li>
-            <li className='login'>LogIn</li>
+            <li className='login'><Link style={{textDecoration:"none",color:"white"}} href="/login">LogIn</Link></li>
           </div>
           {dark ? <div className='c' onClick={changeColor}><SunIcon /></div> : <div className='c' onClick={changeColor}><MoonIcon/></div>}
         </div>
