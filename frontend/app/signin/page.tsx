@@ -29,7 +29,7 @@ const SignIn: React.FC = () => {
     const onSubmit: SubmitHandler<Inputs> = async (data) => {
         try {
             await delay(2);
-            const response = await fetch("http://localhost:3001", {
+            const response = await fetch("http://localhost:3001/signin", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data)
