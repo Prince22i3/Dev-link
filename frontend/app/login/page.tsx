@@ -54,14 +54,14 @@ const Login:React.FC = () => {
     return (
     <div>
         <form className='loginPage' onSubmit={handleSubmit(onSubmit)}>
-            {message&&<div>{message}</div>}
-            {isSubmitting&&<div>Submitting</div>}
+            {message&&<div style={{color:messageType==true?"green":"red"}}>{message}</div>}
+            {isSubmitting&&<div>Submitting...</div>}
             <div><h1 style={{textDecoration:"underline"}}>Login</h1></div>
-            <div>Username: <input type="text" {...register("username",{required:{value:true,message:"This field cannot be empty"}})} /></div>
+            <div className='loginInt'>Username: <input type="text" {...register("username",{required:{value:true,message:"This field cannot be empty"}})} /></div>
             {errors.username&&<div className='err'>{errors.username.message}</div>}
-            <div>Password: <input type="password" {...register("password",{required:{value:true,message:"This field cannot be empty"}})} /></div>
+            <div className='loginInt'>Password: <input type="password" {...register("password",{required:{value:true,message:"This field cannot be empty"}})} /></div>
             {errors.password&&<div className='err'>{errors.password.message}</div>}
-            <input disabled={isSubmitting} type="submit" value="SUBMIT"/>
+            <input className='submitLogin' disabled={isSubmitting} type="submit" value="SUBMIT"/>
         </form>
     </div>
     )

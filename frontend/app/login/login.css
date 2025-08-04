@@ -16,3 +16,25 @@ body{
 .err{
     color: red;
 }
+.loginInt input{
+    width: 17vw;
+    height: 4vh;
+    border-radius: 4vh;
+    border: none;
+    padding-left: 10px;
+    font-size: 2vh;
+}
+.loginInt{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2vh;
+}
+.submitLogin{
+    width: 8vw;
+    height: 4vh;
+    border-radius: 4vh;
+    border: none;
+    font-weight: 550;
+    font-size: 1.5vh;
+}
