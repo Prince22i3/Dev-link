@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import './profile.css'
 import MenuIcon from '../img/menu'
 import Dropdown from '../components/dropdown'
+import EditProfile from '../editprofile/page'
 
 const Profile: React.FC = () => {
     const [open, setOpen] = useState<boolean>(false);
@@ -48,7 +49,9 @@ const Profile: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className='bodyContent'></div> //left here
+                    <div className='bodyContent'>
+                        <div>Create your first project</div>
+                    </div>
 
                 </div>
             </div>

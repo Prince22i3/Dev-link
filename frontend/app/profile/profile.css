@@ -39,7 +39,7 @@ body{
 }
 .profileBodyTop{
     border: 1px solid white;
-    height: 160px;
+    height: 18vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,11 +57,11 @@ body{
     justify-content: center;
 }
 .follow{
-    width: 20vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 40px;
+    gap: 2vw;
+    margin-right: 2vw;
 }
 .follow div{
     display: flex;
@@ -104,4 +104,10 @@ body{
 }
 .profileBody{
     position: relative;
+}
+.bodyContent{
+    display: flex;
+    height: 64vh;
+    align-items: center;
+    justify-content: center;
 }

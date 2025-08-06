@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: #cccccc;
+    font-family: "Orbitron";
+}
+.editpfp div{
+    border: 1px solid white;
+    width: 240px;
+    height: 240px;
+    border-radius: 120px;
+    margin: 20px;
+}
+.editpfp{
+    display: flex;
+    justify-content: center;
+}
+.fullName{
+    display: flex;
+    flex-direction: column;
+}
+.fullName input{
+    width: 17vw;
+}
