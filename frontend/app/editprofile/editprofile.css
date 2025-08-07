@@ -14,10 +14,17 @@ body{
     display: flex;
     justify-content: center;
 }
-.fullName{
+.editProfileInputDiv{
+    display: flex;
+    margin-bottom: 2vh;
+}
+.editProfileInputDivInt{
+    width: 17vw;
+}
+.editProfileInputDivForm{
     display: flex;
     flex-direction: column;
-}
-.fullName input{
-    width: 17vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8vh;
 }
