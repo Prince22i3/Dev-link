@@ -8,6 +8,7 @@ const port = 3001;
 
 const signinRouter = require('./routes/signin');
 const {router:loginRouter,verifyToken} = require('./routes/login')
+const profileRouter = require('./routes/profile')
 
 mongoose.connect("mongodb://127.0.0.1:27017/DevLink-Users");
 
@@ -20,6 +21,8 @@ app.use(cookieParser())
 
 app.use('/signin',signinRouter);
 app.use('/login',loginRouter);
+
+app.use('/editprofile',profileRouter);
 
 
 app.listen(port,()=>{

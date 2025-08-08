@@ -5,14 +5,18 @@ import MenuIcon from '../img/menu'
 import Dropdown from '../components/dropdown'
 import EditProfile from '../editprofile/page'
 
-const Profile: React.FC = () => {
+interface User{
+    username: string;
+}
+
+const Profile: React.FC<{user:User}> = ({user}) => {
     const [open, setOpen] = useState<boolean>(false);
     return (
         <div className='profilePage'>
             <div className='profileContent'>
                 <div className='profileTop'>
                     <div className='profileTopLeft'>
-                        <div style={{ fontSize: "22px" }}>Welcome, Mighty</div>
+                        <div style={{ fontSize: "22px" }}>Welcome, {user.username}</div>
                         <div style={{ fontSize: "12px" }}>Mon, 04 August 2025</div>
                     </div>
                     <div className='profileTopRight'>
